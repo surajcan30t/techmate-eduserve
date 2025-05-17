@@ -1,4 +1,4 @@
-import { CheckCircle } from "lucide-react"
+import { CheckCircle } from "lucide-react";
 
 export default function About() {
   return (
@@ -12,39 +12,44 @@ export default function About() {
             </span>
           </h2>
           <p className="mt-4 text-muted-foreground text-lg max-w-3xl mx-auto">
-            We are an innovative EdTech company dedicated to transforming educational institutions through cutting-edge
-            technology solutions.
+            We are an innovative EdTech company dedicated to transforming
+            educational institutions through cutting-edge technology solutions.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div className="space-y-6">
             <p className="text-lg">
-              TECHMATE EDUSERVE LLP is a leading provider of educational technology solutions designed to streamline
-              operations, enhance learning experiences, and drive digital transformation in educational institutions.
+              TECHMATE EDUSERVE LLP is a leading provider of educational
+              technology solutions designed to streamline operations, enhance
+              learning experiences, and drive digital transformation in
+              educational institutions.
             </p>
 
             <p className="text-lg">
-              Our mission is to empower schools, colleges, and universities with innovative software solutions that
-              address the evolving needs of modern education.
+              Our mission is to empower schools, colleges, and universities with
+              innovative software solutions that address the evolving needs of
+              modern education.
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
-              <div className="flex items-start gap-2">
-                <CheckCircle className="h-5 w-5 text-teal-500 mt-0.5" />
-                <span>Innovative Solutions</span>
-              </div>
-              <div className="flex items-start gap-2">
-                <CheckCircle className="h-5 w-5 text-teal-500 mt-0.5" />
-                <span>Expert Team</span>
-              </div>
-              <div className="flex items-start gap-2">
-                <CheckCircle className="h-5 w-5 text-teal-500 mt-0.5" />
-                <span>Customized Approach</span>
-              </div>
-              <div className="flex items-start gap-2">
-                <CheckCircle className="h-5 w-5 text-teal-500 mt-0.5" />
-                <span>Continuous Support</span>
+            <div className="w-full flex justify-center items-center">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+                <div className="flex justify-start gap-2">
+                  <CheckCircle className="h-5 w-5 text-teal-500 mt-0.5" />
+                  <span>Innovative Solutions</span>
+                </div>
+                <div className="flex justify-start gap-2">
+                  <CheckCircle className="h-5 w-5 text-teal-500 mt-0.5" />
+                  <span>Expert Team</span>
+                </div>
+                <div className="flex justify-start gap-2">
+                  <CheckCircle className="h-5 w-5 text-teal-500 mt-0.5" />
+                  <span>Customized Approach</span>
+                </div>
+                <div className="flex justify-start gap-2">
+                  <CheckCircle className="h-5 w-5 text-teal-500 mt-0.5" />
+                  <span>Continuous Support</span>
+                </div>
               </div>
             </div>
           </div>
@@ -55,7 +60,7 @@ export default function About() {
               <div className="h-full w-full rounded-xl bg-muted flex items-center justify-center p-8">
                 <div className="grid grid-cols-2 gap-4 w-full">
                   <div className="bg-background/90 rounded-lg p-4 text-center shadow-md">
-                    <div className="text-3xl font-bold text-purple-600">5+</div>
+                    <div className="text-3xl font-bold text-purple-600">2+</div>
                     <div className="text-sm mt-1">Years Experience</div>
                   </div>
                   <div className="bg-background/90 rounded-lg p-4 text-center shadow-md">
@@ -79,5 +84,5 @@ export default function About() {
         </div>
       </div>
     </section>
-  )
+  );
 }

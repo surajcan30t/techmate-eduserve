@@ -1,12 +1,12 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Menu, X } from "lucide-react"
-import techmatelogo from '@/assets/Techmate.png'
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Menu, X } from "lucide-react";
+import techmatelogo from "@/assets/Techmate.png";
 
 export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -18,28 +18,49 @@ export default function Header() {
             </span>
           </a>
         </div>
-        <nav className="hidden md:flex gap-6">
-          <a href="#home" className="text-sm font-medium transition-colors hover:text-primary">
-            Home
-          </a>
-          <a href="#about" className="text-sm font-medium transition-colors hover:text-primary">
-            About
-          </a>
-          <a href="#services" className="text-sm font-medium transition-colors hover:text-primary">
-            Services
-          </a>
-          <a href="#contact" className="text-sm font-medium transition-colors hover:text-primary">
-            Contact
-          </a>
-        </nav>
-        <div className="hidden md:flex">
-          <Button className="bg-gradient-to-r from-purple-600 to-teal-500 hover:from-purple-700 hover:to-teal-600">
-            <a href="#services">Get Started</a>
-          </Button>
+        <div className="flex flex-row justify-center items-center gap-5">
+          <nav className="hidden md:flex gap-6">
+            <a
+              href="#home"
+              className="text-sm font-medium transition-colors hover:text-primary"
+            >
+              Home
+            </a>
+            <a
+              href="#about"
+              className="text-sm font-medium transition-colors hover:text-primary"
+            >
+              About
+            </a>
+            <a
+              href="#services"
+              className="text-sm font-medium transition-colors hover:text-primary"
+            >
+              Services
+            </a>
+            <a
+              href="#contact"
+              className="text-sm font-medium transition-colors hover:text-primary"
+            >
+              Contact
+            </a>
+          </nav>
+          <div className="hidden md:flex">
+            <Button className="bg-gradient-to-r from-purple-600 to-teal-500 hover:from-purple-700 hover:to-teal-600">
+              <a href="#services">Get Started</a>
+            </Button>
+          </div>
+          <button
+            className="md:hidden"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? (
+              <X className="h-6 w-6" />
+            ) : (
+              <Menu className="h-6 w-6" />
+            )}
+          </button>
         </div>
-        <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-          {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-        </button>
       </div>
       {isMenuOpen && (
         <div className="md:hidden container py-4 pb-6 border-b">
@@ -79,5 +100,5 @@ export default function Header() {
         </div>
       )}
     </header>
-  )
+  );
 }

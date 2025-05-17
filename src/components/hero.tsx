@@ -98,7 +98,7 @@ export default function Hero() {
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-center">
           <div className="space-y-6">
             <div>
-              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl bg-gradient-to-r from-purple-600 via-teal-500 to-blue-600 bg-clip-text text-transparent">
+              <h1 className="h-fit py-2 text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl bg-gradient-to-r from-purple-600 via-teal-500 to-blue-600 bg-clip-text text-transparent">
                 Transforming Education Through Technology
               </h1>
               <p className="mt-4 text-muted-foreground text-lg md:text-xl">

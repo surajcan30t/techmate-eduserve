@@ -40,7 +40,7 @@ export default function Contact() {
                       </div>
                       <div>
                         <h3 className="font-medium text-start">Phone</h3>
-                        <p className="text-muted-foreground">+91 9876543210</p>
+                        <p className="text-muted-foreground">+91 9437386374</p>
                       </div>
                     </div>
 
@@ -50,7 +50,7 @@ export default function Contact() {
                       </div>
                       <div>
                         <h3 className="font-medium text-start">Address</h3>
-                        <p className="text-muted-foreground">TECHMATE EDUSERVE LLP, India</p>
+                        <p className="text-muted-foreground">Technology Corridor, Infocity, Chandrasekharpur, Bhubaneswar, Odisha 751024</p>
                       </div>
                     </div>
                   </div>

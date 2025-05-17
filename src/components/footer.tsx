@@ -8,7 +8,7 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-4">TECHMATE EDUSERVE</h3>
             <p className="text-muted-foreground">Transforming education through innovative technology solutions.</p>
-            <div className="flex gap-4 mt-4">
+            <div className="flex justify-center gap-4 mt-4">
               <a href="#" className="text-muted-foreground hover:text-foreground">
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
